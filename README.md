@@ -9,6 +9,11 @@ There is a spot where possibilities in each square (sometimes called "penciled i
 Functionality to be added next:  
 Hard puzzle solving (probably a naive search)  
 A way to input puzzles other than directly into the source code (terminal?)
+Time how long it takes to find the solution
+
+Other todos:  
+Change MiniGrid to be a 2D array of ArrayLists, instead of a 3D ArrayList  
+Make updateMiniGrid more efficient, actually take into account what changed  
 
 Situations it can solve-
 
@@ -18,13 +23,14 @@ Situations it can solve-
 
 * 8/9 numbers in a box are filled in (emptySpotBox())
 
-* Only one possible location for the number in a particular box (onlyOneInBox())
+* 8/9 numbers cannot fill a square because they are in the same row, box, or column (miniGridLengthOne())
 
 * Only one possible location for the number in a particular row (onlyOneInRow())
 
 * Only one possible location for the number in a particular column (onlyOneInCol())
 
-* 8/9 numbers cannot fill a square because they are in the same row, box, or column (miniGridLengthOne())
+* Only one possible location for the number in a particular box (onlyOneInBox())
+
 
 
 Situations it cannot solve-
